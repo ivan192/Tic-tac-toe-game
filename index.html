@@ -2,7 +2,7 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
     <title>Tic-Tac-Toe</title>
-    <meta name="title" content="Tic-Tac-Toe">
+    <meta name="title" content="Крестики-нолики">
     <meta name="twitter:title" content="Tic-Tac-Toe">
     <meta property="og:title" content="Tic-Tac-Toe">
     <meta name="description" content="Come battle it out with a friend or computer in an intense game of Tic-Tac-Toe in the browser! Based on the classic pencil and paper game.">
@@ -35,17 +35,17 @@
     </div>
     
     <div id="menu-mode" class="menu" style="display:none;">
-      <h2 class="menu-title">Select Mode</h2>
+      <h2 class="menu-title">Режимы</h2>
       <button class="menu-back" onclick="ttt.showMenu('main');" title="Back"><span class="icon-arrow"></span></button>
-      <p class="menu-text center">Please select a game mode.</p>
+      <p class="menu-text center">Выберите режим игры.</p>
       <button class="menu-option" onclick="ttt.startGame('cpu', 'new');">1 игрок</button>
       <button class="menu-option" onclick="ttt.startGame('multi', 'new');">2 игрока</button>
     </div>
     
     <div id="menu-help" class="menu" style="display:none;">
-      <h2 class="menu-title">How to Play</h2>
+      <h2 class="menu-title">Правила игры</h2>
       <button class="menu-back" onclick="ttt.showMenu('main');" title="Back"><span class="icon-arrow"></span></button>
-      <h3 class="sub-title">Правила игры</h3>
+      <h3 class="sub-title">Как играть</h3>
       <p class="menu-text">In Tic-Tac-Toe two players take turns marking the spaces in a 3x3 grid. The rules are simple: the first player to place three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
       <div class="menu-text center">
         <img src="resources/images/example.png" alt="example">
@@ -66,15 +66,6 @@
       <h3 class="sub-title">About this Project</h3>
       <p class="menu-text">This game was created simply for fun and to test myself. It's based on the classic pencil and paper game and built using HTML, CSS, and JavaScript.</p>
       
-      <h3 class="sub-title">Developers</h3>
-      <ul class="menu-list">
-        <li><a href="https://github.com/SethClydesdale" target="_blank">Seth Clydesdale</a></li>
-      </ul>
-      
-      <h3 class="sub-title">Source Code</h3>
-      <p class="menu-text">This version of tic-tac-toe is open source, which means that you can view the source code or contribute to it on Github. Click the link below to visit the repository.</p>
-      <div class="menu-text center"><a href="https://github.com/SethClydesdale/tic-tac-toe" target="_blank">github.com/SethClydesdale/tic-tac-toe</a></div>
-    </div>
     
     <div id="menu-game" class="menu" style="display:none;">
       <h2 id="game-title" class="menu-title"></h2>
