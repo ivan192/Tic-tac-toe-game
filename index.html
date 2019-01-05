@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>Крестики-нолики</title>
+    <meta name="title" content="Крестики-нолики">
+    <meta name="twitter:title" content="Tic-Tac-Toe">
+    <meta property="og:title" content="Tic-Tac-Toe">
+    <meta name="description" content="Come battle it out with a friend or computer in an intense game of Tic-Tac-Toe in the browser! Based on the classic pencil and paper game.">
+    <meta property="og:description" content="Come battle it out with a friend or computer in an intense game of Tic-Tac-Toe in the browser! Based on the classic pencil and paper game.">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/ttt.ico">
+
+    <meta name="keywords" content="Tic Tac Toe, Noughts and Crosses, Xs and Os, Game, Open Source, Free" lang="en">
+    <meta name="language" content="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:site_name" content="sethclydesdale.github.io">
+    <meta property="og:url" content="https://sethclydesdale.github.io/tic-tac-toe/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sethclydesdale.github.io/tic-tac-toe/resources/images/ttt-thumb.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@SethC1995">
+
+    <link rel="stylesheet" href="resources/stylesheet.min.css">
+  </head>
+
+  <body>
+    <div id="menu-main" class="menu">
+      <h1 class="menu-title">Tic-Tac-Toe</h1>
+      <button id="start-game" class="menu-option" onclick="ttt.showMenu('mode');">Start Game</button>
+      <button class="menu-option" onclick="ttt.showMenu('help');">Правила игры</button>
+      <button class="menu-option" onclick="ttt.showMenu('about');">Об игре</button>
+    </div>
+    
+    
+
+   
+
+      
+      <h3 class="sub-title">Исходный код</h3>
+      <p class="menu-text">This version of tic-tac-toe is open source, which means that you can view the source code or contribute to it on Github. Click the link below to visit the repository.</p>
+      <div class="menu-text center"><a href="https://github.com/SethClydesdale/tic-tac-toe" target="_blank">github.com/SethClydesdale/tic-tac-toe</a></div>
+    </div>
+    
+    <div id="menu-game" class="menu" style="display:none;">
+      <h2 id="game-title" class="menu-title"></h2>
+      <button class="menu-back" onclick="ttt.showMenu('main');" title="Main menu"><span class="icon-menu"></span></button>
+      <div id="game-turn"></div>
+      <div id="game-score" class="clear">
+        <div id="score-x" class="score-cell"></div>
+        <div id="score-draw" class="score-cell"></div>
+        <div id="score-o" class="score-cell"></div>
+      </div>
+      <div id="game-board"></div>
+      <button id="game-replay" class="menu-option" onclick="ttt.startGame(ttt.mode, 'new+');" style="display:none;">Play Again</button>
+    </div>
+    
+    <script src="resources/javascript.min.js"></script>
+  </body>
+</html>
